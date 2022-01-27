@@ -1,3 +1,18 @@
+window.TrelloPowerUp.initialize({
+  'board-buttons': function (t, opts) {
+    return [{
+      icon: {
+        dark: WHITE_ICON,
+        light: BLACK_ICON
+      },
+      text: 'Callback',
+      callback: onBtnClick,
+
+    }
+  }
+});
+
+
 window.Trello.authorize({
     type: 'popup',
     name: 'Getting Started Application',
