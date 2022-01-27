@@ -1,0 +1,22 @@
+{
+  "name": "eflow-power-up",
+  "version": "1.0.0",
+  "description": "Integration with e-flow and trello",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"Hello E-Flow\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borokozdomorr/Power-Up.git"
+  },
+  "author": "Burak Özdemir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borokozdomorr/Power-Up/issues"
+  },
+  "homepage": "https://github.com/borokozdomorr/Power-Up#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
