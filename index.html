@@ -51,28 +51,12 @@ crossorigin="anonymous"></script>
 
 
     'authorization-status': function(t, options){
-var Result = false;
 
-var model = {
-  "companyID":0,
-  "username":"admin",
-  "password":"admin"
-}
-var Url = "http://localhost:15055/Api/User/Login";
-  
-ajax({
-  url:Url,
-  type:"POST",
-   data:JSON.stringify(model),
-   contentType: "application/json"
-}).done(function(res){
-Result = true;
-});
       // return a promise that resolves to the object with
       // a property 'authorized' being true/false
       // you can also return the object synchronously if you know
       // the answer synchronously
-      return new TrelloPowerUp.Promise((resolve) => resolve({ authorized: Result }));
+      return new TrelloPowerUp.Promise((resolve) => resolve({ authorized: true }));
     }
   });
 </script>
