@@ -29,6 +29,27 @@ crossorigin="anonymous"></script>
      //   height: 184 // we can always resize later
     //  });
    // },
+   'show-authorization': function(t, options){
+    // return what to do when a user clicks the 'Authorize Account' link
+    // from the Power-Up gear icon which shows when 'authorization-status'
+    // returns { authorized: false }
+    // in this case we would open a popup
+    var model = {
+  "companyID":0,
+  "username":"admin",
+  "password":"admin"
+}
+
+
+    return t.popup({
+      title: 'E-Flow Login Ol',
+      url: 'http://localhost:15055/Api/User/Login',
+      data:JSON.stringify(model),
+      height: 140,
+    });
+  },
+
+
     'authorization-status': function(t, options){
 var Result = false;
 
