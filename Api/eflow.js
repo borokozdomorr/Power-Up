@@ -1,4 +1,4 @@
-const { data } = require("jquery");
+
 
 
 
