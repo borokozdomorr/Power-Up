@@ -25,7 +25,7 @@ var model = {
 }
 var Url = "http://localhost:15055/Api/User/Login";
   
-ajax({
+jquery.ajax({
   url:Url,
   type:"POST",
    data:JSON.stringify(model),
