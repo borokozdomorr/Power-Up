@@ -6,40 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-  
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
     <script src="../Api/eflow.js"></script>
 
-    <script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
 
-<script>
-  window.TrelloPowerUp.initialize({
-    'show-settings': function(t, options){
-       
-      return t.popup({
-      title: 'Custom Fields Settings',
-       url: './login.html',
-        height: 184 // we can always resize later
-     });
-    },
-   'show-authorization': function(t, options){
-    // return what to do when a user clicks the 'Authorize Account' link
-    // from the Power-Up gear icon which shows when 'authorization-status'
-    // returns { authorized: false }
-    // in this case we would open a popup
-    return t.popup({
-      title: 'E-Flow',
-      url: './login.html',
-      height: 500,
-    });
-  }
-  });
-</script>
 </head>
 
 
