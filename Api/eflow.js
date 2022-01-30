@@ -23,11 +23,11 @@ var Data = {
   "username":"admin",
   "password":"admin"
 }
-var Url = "http://localhost:15055/Api/Login";
+var Url = "http://localhost:15055/Api/User/Login";
 
 jQuery.ajax({
   url:Url,
-  type:"GET",
+  type:"POST",
    data:Data
 })
       // return a promise that resolves to the object with
