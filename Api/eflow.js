@@ -4,11 +4,16 @@
 
 
   window.TrelloPowerUp.initialize({
-    "board-buttons": function (t, opts) {
-      return t.board("all").then(function (board) {
-        console.log(JSON.stringify(board, null, 2));
+    'show-settings': function(t, options){
+      // when a user clicks the gear icon by your Power-Up in the Power-Ups menu
+      // what should Trello show. We highly recommend the popup in this case as
+      // it is the least disruptive, and fits in well with the rest of Trello's UX
+      return t.popup({
+        title: 'Custom Fields Settings',
+        url: './login.html',
+        height: 184 // we can always resize later
       });
-    },
+    }
   });
 
 console.log("Hello World");
