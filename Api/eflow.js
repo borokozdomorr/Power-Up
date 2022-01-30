@@ -1,3 +1,4 @@
+const { data } = require("jquery");
 
 
 
@@ -15,6 +16,20 @@
       });
     },
     'authorization-status': function(t, options){
+
+
+var Data = {
+  "companyID":0,
+  "username":"admin",
+  "password":"admin"
+}
+var Url = "http://localhost:15055/Api/Login";
+
+jQuery.ajax({
+  url:Url,
+  type:"GET",
+   data:Data
+})
       // return a promise that resolves to the object with
       // a property 'authorized' being true/false
       // you can also return the object synchronously if you know
